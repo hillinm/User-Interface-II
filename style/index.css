@@ -1,1 +1,198 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+header{
+    background-color: #00273f;
+    text-align: center;
+    height: 25px;
+    align-items: center
+}
+header a {
+    font-size: large;
+}
+#container {
+    background-color: #0170B3;
+    height: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+#container img{
+    height: 6rem;
+    max-width: 25rem;
+    margin-right: 55%;
+}
+#myname {
+    font-size: 3rem;
+    text-align: center;
+    color: #0170B3;
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 45%;
+}
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid darkgrey;
+    margin: 0px 20px 20px 20px;
+    color: darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#button1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  } 
+  #button1 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button1:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button1:hover a {
+    color: #2D3142;
+  }
+  a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  p{
+    background-color: #53b7f5;
+    font-size: 30px;
+    text-align: center;
+    color: #0170B3;
+    font-family: 'Kaushan Script', cursive;
+  }
+  #projects {
+    background-color: #53b7f5;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;    
+}
+#footer {
+    background-color: #011b2b;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+#pictures{
+    background-color: #53b7f5;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; 
+}
+img {
+    width: 400px;
+    height: auto;
+}
+#captions{
+    background-color: #53b7f5;
+    width: 100%;
+    margin: 0 20 0 20;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
