@@ -193,4 +193,10 @@ img {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+  figcaption{
+    font-size: 30px;
+    text-align: center;
+    color: #0170B3;
+    font-family: 'Kaushan Script', cursive;
+  }
 
