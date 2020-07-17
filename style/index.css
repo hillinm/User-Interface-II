@@ -164,7 +164,7 @@ iframe {
     font-family: 'Kaushan Script', cursive;
     padding: 50px 0 20px 0;
   }
-  p{
+  p {
     background-color: #DDCBA4;
     font-size: 20px;
     text-align: center;
@@ -187,9 +187,9 @@ iframe {
     margin: 0 auto;
     padding: 40px 0 40px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 10px;
+    justify-content: center;
+    height: 20px;
 }
 #pictures{
     background-color: #DDCBA4;
