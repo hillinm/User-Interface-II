@@ -72,7 +72,7 @@ header a {
 #main iframe{
   align-items: center;
   width: 50%;
-  margin: 0 15% 0 15%;
+  margin: 0 25% 0 25%;
   height: 500px;
   box-shadow: 2px 2px 12px;
 }
@@ -225,7 +225,6 @@ img {
     padding: 20px 0 20px 0;
   }
 @media(max-width:500px) {
-  
   #container {
     background-color: #8b2728;
     height: auto;
@@ -263,5 +262,60 @@ img {
     height: 500px;
     box-shadow: 2px 2px 12px;
     justify-content: center;
+  }
+  #main iframe{
+    align-items: center;
+    width: 50%;
+    margin: 0 15% 0 15%;
+    height: 500px;
+    box-shadow: 2px 2px 12px;
+  }
+}
+@media(max-width:1000px) {
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8b2728;
+    height: auto;
+    width: 0 auto;
+    padding: 5px 0 5px 0;
+  }
+  .button {
+    display: flex;
+    height: 40px;
+    width: 75px;
+    border: 2px solid #DDCBA4;
+    color: darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #myname {
+    font-size: 3rem;
+    width: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+    padding: 5px
+  }
+  #main iframe{
+    width: 400px;
+    height: 500px;
+    box-shadow: 2px 2px 12px;
+    justify-content: center;
+  }
+  #main iframe{
+    align-items: center;
+    width: 50%;
+    margin: 0 25% 0 25%;
+    height: 500px;
+    box-shadow: 2px 2px 12px;
   }
 }
