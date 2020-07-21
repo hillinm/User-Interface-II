@@ -65,18 +65,20 @@ header a {
 }
 body{
     background-image: url(/graphics/OU.jpg);
-    background-position: center top;
-    background-size: 100% auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-self: center;
+    height: auto;
 }
 
 .container img {
-    height: 500px;
+    height: 400px;
     margin: 5rem 0 0 0;
     border-radius: 5%;
     box-shadow: 0 8px 12px, 0 8px 12px;
@@ -90,11 +92,9 @@ h2 {
 }
 
 .main_text {
-    text-align: center;
-    text-justify: inter-word;
-    align-items: center;
-    padding: 0 0 0 20px;
-    width: 650px;
+    padding: 0 0 0 120px;
+    width: auto;
+    height: 600px;
     color:maroon;
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
@@ -102,21 +102,17 @@ h2 {
 }
 #container {
     background-color: #8b2728;
-    height: 1rem;
     width: 100%;
+    height: 50px;
     margin: 0 auto;
     padding: 50px 0 50px 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: baseline;
 }
-#container img{
-    height: 6rem;
-    max-width: 25rem;
-    margin-right: 55%;
-}
+
 #myname {
     font-size: 3rem;
     text-align: center;
@@ -189,5 +185,106 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10px;
+    height: auto;
+  }
+  @media(max-width:500px) {
+    .main_text {
+      padding: 0 0 0 120px;
+      width: auto;
+      height: 600px;
+      color:maroon;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 20px;
+      line-height: 1.2;
+  }
+    #container {
+      background-color: #8b2728;
+      height: auto;
+      width: 0 auto;
+      margin: 0 auto;
+      padding: 10px 0 10px 0;
+      display: block;
+    }
+    .button {
+      display: inline-flex;
+      height: 40px;
+      width: 100px;
+      border: 2px solid #DDCBA4;
+      color: darkgrey;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #myname {
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Kaushan Script', cursive;
+      padding: 10px
+    }
+    .container img {
+      height: 200px;
+      border-radius: 5%;
+      box-shadow: 0 8px 12px, 0 8px 12px;
+  }
+  p {
+    font-size: x-small;
+  }
+  }
+  @media(min-width:501px) and (max-width:1000px) {
+    .main_text {
+      padding: 0 0 0 120px;
+      width: auto;
+      height: 540px;
+      color:maroon;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 20px;
+      line-height: 1.2;
+  }
+    #container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #8b2728;
+      height: auto;
+      padding: 5px 0 5px 0;
+    }
+    .button {
+      display: flex;
+      height: 40px;
+      width: 75px;
+      border: 2px solid #DDCBA4;
+      color: darkgrey;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #myname {
+      font-size: 3rem;
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Kaushan Script', cursive;
+      padding: 5px
+    }
+    .container img {
+      height: 400px;
+      border-radius: 5%;
+      box-shadow: 0 8px 12px, 0 8px 12px;
+  }
+  p {
+    font-size: smaller;
+  }
 }
