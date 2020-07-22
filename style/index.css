@@ -1,1 +1,307 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+header{
+    background-color: #841617;
+    text-align: center;
+    height: 25px;
+    align-items: center
+}
+header a {
+    font-size: large;
+}
+#main { 
+  width: auto;
+  background-color: #DDCBA4;
+  display: flex;
+  align-items: center;
+}
+#main iframe{
+  align-items: center;
+  width: auto;
+  width: 50%;
+  height: 500px;
+  margin: 0 25% 0 25%;
+  box-shadow: 2px 2px 12px;
+}
+iframe {
+  box-shadow: 2px 2px 12px;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+#container {
+    background-color: #8b2728;
+    height: 1rem;
+    width: auto;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+#container img{
+    height: 6rem;
+    max-width: 25rem;
+    margin-right: 55%;
+}
+#myname {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 45%;
+}
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #DDCBA4;
+    margin: 0px 20px 20px 20px;
+    color: darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#button1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  } 
+  #button1 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #DDCBA4;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button1:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button1:hover a {
+    color: #2D3142;
+  }
+  a {
+    color: #DDCBA4;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  h1 {
+    background-color: #DDCBA4;
+    font-size: 30px;
+    text-align: center;
+    color: #841617;
+    font-family: 'Kaushan Script', cursive;
+    padding: 50px 0 20px 0;
+  }
+  p {
+    background-color: #DDCBA4;
+    font-size: 20px;
+    text-align: center;
+    color: #841617;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px 0 20px 0;
+  }
+  #projects {
+    background-color: #DDCBA4;
+    width: 100%;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+#footer {
+    background-color: #841617;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+#pictures{
+    background-color: #DDCBA4;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img {
+    width: 400px;
+    height: auto;
+    box-shadow: 2px 2px 12px;
+}
+#captions{
+    background-color: #841617;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  figcaption{
+    font-size: 30px;
+    text-align: center;
+    color: #841617;
+    font-family: 'Kaushan Script', cursive;
+    padding: 20px 0 20px 0;
+  }
+@media(max-width:500px) {
+  #container {
+    display: block;
+    background-color: #8b2728;
+    height: auto;
+    width: auto;
+    padding: 10px 0 10px 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .button {
+    display: inline-flex;
+    height: 40px;
+    width: 100px;
+    border: 2px solid #DDCBA4;
+    color: darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #myname {
+    font-size: 3rem;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+    padding: 10px;
+    margin-right: 15%;
+  }
+  #main iframe{
+    box-shadow: 2px 2px 12px;
+    justify-content: center;
+  }
+}
+@media(max-width:800px) {
+  #container {
+    display: inline-flex;
+    background-color: #8b2728;
+    height: auto;
+    width: 100%;
+  }
+  .button {
+    display: inline-flex;
+    height: 40px;
+    width: 75px;
+    border: 2px solid #DDCBA4;
+    color: darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #myname {
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    padding: 5px;
+    margin-right: 15%;
+  }
+  #main iframe{
+    width: 400px;
+    height: 500px;
+    box-shadow: 2px 2px 12px;
+    justify-content: center;
+  }
+  #main iframe{
+    align-items: center;
+    width: 50%;
+    margin: 0 25% 0 25%;
+    height: 500px;
+    box-shadow: 2px 2px 12px;
+  }
+}
